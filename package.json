@@ -1,0 +1,27 @@
+{
+  "name": "bunyan-influx",
+  "version": "1.0.0",
+  "description": "A Bunyan stream for saving logs into InfluxDB",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielinaciodemello/bunyan-influx.git"
+  },
+  "author": "Gabriel Mello",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabrielinaciodemello/bunyan-influx/issues"
+  },
+  "homepage": "https://github.com/gabrielinaciodemello/bunyan-influx#readme",
+  "devDependencies": {
+    "typescript": "^3.0.1",
+    "@types/node": "^6.0.52"
+  },
+  "dependencies": {
+    "influx": "^5.0.7"
+  }
+}
