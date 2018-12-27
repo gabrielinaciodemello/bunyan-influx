@@ -1,6 +1,6 @@
 {
   "name": "bunyan-influx",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Bunyan stream for saving logs into InfluxDB",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

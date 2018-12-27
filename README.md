@@ -11,7 +11,7 @@ const stream = await bunyanInflux.GetStream({
                         schema: [
                         {
                             fields: {
-                                json: bunyanInflux.InfluxTypes.STRING
+                                jsonString: bunyanInflux.InfluxTypes.STRING
                             },
                             measurement: "logs",
                             tags: ["level"]
@@ -19,8 +19,11 @@ const stream = await bunyanInflux.GetStream({
                         ]
                     });
 
-bunyan.createLogger({
+const log = bunyan.createLogger({
   name: "my-applog",
   stream: stream
 });
+
+log.info({ jsonString: JSON.stringify({ message: "My json string" }) });
+
 ```
